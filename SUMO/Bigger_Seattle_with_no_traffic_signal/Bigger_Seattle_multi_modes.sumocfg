@@ -1,0 +1,17 @@
+<configuration>
+
+	<input> 
+		<net-file value="Seattle02262021_veh_ped.net.xml"/>
+		<route-files value="Bigger_Seattle_veh.rou.xml, Bigger_Seattle_ped.rou.xml, bus_link_route.rou.xml"/> 
+		<additional-files value = "Taz_bigger_Seattle_all_transit.add.xml"/>
+	</input> 
+	
+	<output>
+		<tripinfo-output value = "tripinfo_Bigger_Seattle_transit.xml" />
+	</output>
+	
+	<guionly>
+		<quit-on-end value = "false" />
+	</guionly>
+	
+</configuration>
