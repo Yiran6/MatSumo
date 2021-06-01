@@ -1,0 +1,33 @@
+2021-05-31 07:35:52,519  WARN QueueWithBuffer:377 Link 1 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:52,522  WARN QueueWithBuffer:377 Link 20 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:52,522  WARN QueueWithBuffer:377 Link 21 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:52,523  WARN QueueWithBuffer:377 Link 22 too small: enlarge storage capacity from: 4666.666666666667 Vehicles to: 12598.99208063355 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:52,523  WARN QueueWithBuffer:377 Link 23 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:54,778  WARN QueueWithBuffer:377 Link 1 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:54,779  WARN QueueWithBuffer:377 Link 20 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:54,779  WARN QueueWithBuffer:377 Link 21 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:54,779  WARN QueueWithBuffer:377 Link 22 too small: enlarge storage capacity from: 4666.666666666667 Vehicles to: 12598.99208063355 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:54,779  WARN QueueWithBuffer:377 Link 23 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:56,673  WARN QueueWithBuffer:377 Link 1 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-31 07:35:56,673  WARN QueueWithBuffer:380 Additional warnings of this type are suppressed.
+2021-05-31 07:35:58,322 ERROR DumpDataAtEndImpl:150 writing output events did not work; probably parameters were such that no events were generated in the final iteration
+org.matsim.core.utils.io.UncheckedIOException: java.nio.file.NoSuchFileException: .\scenarios\equil\output-teleported\example\ITERS\it.2\2.events.xml.gz
+	at org.matsim.core.controler.corelisteners.DumpDataAtEndImpl.dumpOutputEvents(DumpDataAtEndImpl.java:147)
+	at org.matsim.core.controler.corelisteners.DumpDataAtEndImpl.notifyShutdown(DumpDataAtEndImpl.java:134)
+	at org.matsim.core.controler.ControlerListenerManagerImpl.fireControlerShutdownEvent(ControlerListenerManagerImpl.java:122)
+	at org.matsim.core.controler.AbstractController$1.shutdown(AbstractController.java:89)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:66)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:31)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:92)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:75)
+	at org.matsim.core.controler.Controler.run(Controler.java:202)
+	at test.sumo.communication.runOwnMobsim.main(runOwnMobsim.java:129)
+Caused by: java.nio.file.NoSuchFileException: .\scenarios\equil\output-teleported\example\ITERS\it.2\2.events.xml.gz
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:98)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:283)
+	at java.base/java.nio.file.Files.copy(Files.java:1299)
+	at org.matsim.core.controler.corelisteners.DumpDataAtEndImpl.dumpOutputEvents(DumpDataAtEndImpl.java:145)
+	... 9 more
