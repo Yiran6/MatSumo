@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated on 2021-07-12 11:00:26.883909 by 3.matsim_toSUMO_rou.py v1_5_0+0000-3a3be608d2
+  options: 
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+   <trip id="8_0_0" depart="25242.0" from="-281972_0" to="-301281_0_r"/>
+   <trip id="24_0_0" depart="25246.0" from="-304825_0" to="-303388_0"/>
+   <trip id="24_1_0" depart="39646" from="-295816_0" to="-304825_0"/>
+</routes>

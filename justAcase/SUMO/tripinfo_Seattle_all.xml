@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 07/12/21 13:39:53 by Eclipse SUMO GUI Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="D:\OneDrive\Works%20with%20Ohay\Ohay的各種檔案\出國讀書課程資料\CET%20600%20-%20Independent%20Research\MATSim\0.project\Matsim-projects\matsim-code-examples\scenarios\seattle-formal-all\justAcase\SUMO\SUMOLinks.net.xml"/>
+        <route-files value="D:\OneDrive\Works%20with%20Ohay\Ohay的各種檔案\出國讀書課程資料\CET%20600%20-%20Independent%20Research\MATSim\0.project\Matsim-projects\matsim-code-examples\scenarios\seattle-formal-all\justAcase\SUMO\matsim_ToSUMO.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="D:\OneDrive\Works%20with%20Ohay\Ohay的各種檔案\出國讀書課程資料\CET%20600%20-%20Independent%20Research\MATSim\0.project\Matsim-projects\matsim-code-examples\scenarios\seattle-formal-all\justAcase\SUMO\tripinfo_Seattle_all.xml"/>
+    </output>
+
+    <gui_only>
+        <quit-on-end value="false"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="8_0_0" depart="25242.00" departLane="-281972_0_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="25311.00" arrivalLane="-301281_0_r_0" arrivalPos="77.78" arrivalSpeed="20.67" duration="69.00" routeLength="1089.45" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="21.74" rerouteNo="1" devices="tripinfo_8_0_0 routing_8_0_0" vType="DEFAULT_VEHTYPE" speedFactor="1.06" vaporized=""/>
+    <tripinfo id="24_0_0" depart="25246.00" departLane="-304825_0_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="25349.00" arrivalLane="-303388_0_0" arrivalPos="86.78" arrivalSpeed="20.04" duration="103.00" routeLength="1488.88" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="16.18" rerouteNo="1" devices="tripinfo_24_0_0 routing_24_0_0" vType="DEFAULT_VEHTYPE" speedFactor="0.94" vaporized=""/>
+    <tripinfo id="24_1_0" depart="39646.00" departLane="-295816_0_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="39724.00" arrivalLane="-304825_0_0" arrivalPos="83.73" arrivalSpeed="12.27" duration="78.00" routeLength="1298.84" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="14.51" rerouteNo="1" devices="tripinfo_24_1_0 routing_24_1_0" vType="DEFAULT_VEHTYPE" speedFactor="1.01" vaporized=""/>
+</tripinfos>
