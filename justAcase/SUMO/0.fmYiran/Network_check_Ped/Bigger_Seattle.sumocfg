@@ -1,0 +1,20 @@
+<configuration>
+
+	<input>
+		<net-file value="Seattle02262021_veh_ped.net.xml"/>
+		<route-files value="Bigger_Seattle_ped_rou.xml"/>
+	</input>
+
+	<output>
+		<tripinfo-output value = "tripinfo_Bigger_Seattle_ped.xml" />
+	</output>
+
+	<guionly>
+		<quit-on-end value = "false" />
+	</guionly>
+
+	<time>
+		<begin value="35000"/>
+	</time>
+
+</configuration>

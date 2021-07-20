@@ -1,12 +1,19 @@
 <configuration>
 
 	<input>
-		<net-file value="SUMOLinks.net.xml"/>
+		<net-file value="Seattle02262021_veh_ped.net.xml"/>
 		<route-files value="matsim_ToSUMO.rou.xml"/>
 	</input>
 
+	<time>
+		<begin value="25000"/>
+		<end value="50000"/>
+	</time>
+
 	<output>
 		<tripinfo-output value = "tripinfo_Seattle_all.xml" />
+		<vehroute-output value = "vehicleRoute_Seattle_all.xml" />
+		<vehroute-output.exit-times value = "true" />
 	</output>
 
 	<guionly>

@@ -1,0 +1,15 @@
+<trip id="10_1_0" depart="25654.0" from="134680279#2" to="4729558"/>
+highway.cycleway delete (SUMOLinks)
+
+<trip id="10_1_0" depart="25654.0" from="-134680279#1" to="4729558"/>
+highway.cycleway delete (SUMOLinks)
+
+<trip id="13_2_0" depart="39826.0" from="134680279#2" to="4729558"/>
+highway.cycleway delete (SUMOLinks)
+
+<trip id="28_2_3" depart="40093.0" from="-428341305" to="gneE586"/>
+gneE586	-294110_0_r; o: gneE586	-294110_0
+gneE586 is for rail, delete (SUMOLinks)
+
+<trip id="12_2_1" depart="40200.0" from="106927265" to="35824613"/>
+106927265 -290921_1; o: 106927265	-289685_2

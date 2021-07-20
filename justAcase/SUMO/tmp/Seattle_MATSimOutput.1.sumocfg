@@ -1,0 +1,18 @@
+<configuration>
+
+	<input>
+		<net-file value="SUMOLinks.net.xml"/>
+		<route-files value="matsim_ToSUMO.rou.xml"/>
+	</input>
+
+	<output>
+		<tripinfo-output value = "tripinfo_Seattle_all.xml" />
+		<vehroute-output value = "vehicleRoute_Seattle_all.xml" />
+		<vehroute-output.exit-times value = "true" />
+	</output>
+
+	<guionly>
+		<quit-on-end value = "false" />
+	</guionly>
+
+</configuration>

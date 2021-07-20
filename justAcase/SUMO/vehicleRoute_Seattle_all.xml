@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 07/20/21 16:24:27 by Eclipse SUMO GUI Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="D:\iUTS\VTD\MyEnv\Matsim-projects\matsim-codes\scenarios\seattle-formal-all\justAcase\SUMO\Seattle02262021_veh_ped.net.xml"/>
+        <route-files value="D:\iUTS\VTD\MyEnv\Matsim-projects\matsim-codes\scenarios\seattle-formal-all\justAcase\SUMO\matsim_ToSUMO.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="D:\iUTS\VTD\MyEnv\Matsim-projects\matsim-codes\scenarios\seattle-formal-all\justAcase\SUMO\tripinfo_Seattle_all.xml"/>
+        <vehroute-output value="D:\iUTS\VTD\MyEnv\Matsim-projects\matsim-codes\scenarios\seattle-formal-all\justAcase\SUMO\vehicleRoute_Seattle_all.xml"/>
+        <vehroute-output.exit-times value="true"/>
+    </output>
+
+    <time>
+        <begin value="25000"/>
+        <end value="50000"/>
+    </time>
+
+    <gui_only>
+        <quit-on-end value="false"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="23_1_0" depart="25242.00" arrival="25247.00">
+        <route edges="gneE507" exitTimes="25247.00"/>
+    </vehicle>
+
+    <vehicle id="8_1_0" depart="25242.00" arrival="25247.00">
+        <route edges="4794449#2" exitTimes="25247.00"/>
+    </vehicle>
+
+    <vehicle id="8_1_1" depart="25247.00" arrival="25248.00">
+        <route edges="332200723" exitTimes="25248.00"/>
+    </vehicle>
+
+    <vehicle id="20_1_0" depart="25237.00" arrival="25251.00">
+        <route edges="8071578#3" exitTimes="25251.00"/>
+    </vehicle>
+
+    <vehicle id="24_1_0" depart="25246.00" arrival="25257.00">
+        <route edges="617436202#0" exitTimes="25257.00"/>
+    </vehicle>
+
+    <vehicle id="24_1_1" depart="25258.00" arrival="25264.00">
+        <route edges="621378235#1" exitTimes="25264.00"/>
+    </vehicle>
+
+    <vehicle id="8_1_2" depart="25257.00" arrival="25273.00">
+        <route edges="490208227#0 45370338#0" exitTimes="25266.00 25273.00"/>
+    </vehicle>
+
+    <vehicle id="23_1_1" depart="25275.00" arrival="25282.00">
+        <route edges="124272619" exitTimes="25282.00"/>
+    </vehicle>
+
+    <vehicle id="8_1_3" depart="25273.00" arrival="25286.00">
+        <route edges="6464775#0" exitTimes="25286.00"/>
+    </vehicle>
+
+    <vehicle id="24_1_3" depart="25315.00" arrival="25320.00">
+        <route edges="421777796#6" exitTimes="25320.00"/>
+    </vehicle>
+
+    <vehicle id="24_1_4" depart="25329.00" arrival="25339.00">
+        <route edges="8111068#1" exitTimes="25339.00"/>
+    </vehicle>
+
+    <vehicle id="20_1_1" depart="25345.00" arrival="25351.00">
+        <route edges="124272619" exitTimes="25351.00"/>
+    </vehicle>
+
+    <vehicle id="8_1_4" depart="25349.00" arrival="25356.00">
+        <route edges="51969309" exitTimes="25356.00"/>
+    </vehicle>
+
+    <vehicle id="24_1_5" depart="25339.00" arrival="25364.00">
+        <route edges="97129777.53" exitTimes="25364.00"/>
+    </vehicle>
+
+    <vehicle id="20_1_2" depart="25366.00" arrival="25373.00">
+        <route edges="428303127" exitTimes="25373.00"/>
+    </vehicle>
+
+    <vehicle id="8_1_5" depart="25371.00" arrival="25375.00">
+        <route edges="6475815#5" exitTimes="25375.00"/>
+    </vehicle>
+
+    <vehicle id="24_1_2" depart="25272.00" arrival="25376.00">
+        <route edges="6450457#0 6450457#2 428244385#0 484849329#0 401075686#0 428244383#0 428244384#0 428243313#0 428243313#1 428243313#2 gneE494" exitTimes="25278.00 25286.00 25344.00 25353.00 25355.00 25360.00 25363.00 25365.00 25368.00 25373.00 25376.00"/>
+    </vehicle>
+
+    <vehicle id="20_1_3" depart="25391.00" arrival="25418.00">
+        <route edges="38008155 4749003" exitTimes="25400.00 25418.00"/>
+    </vehicle>
+
+    <vehicle id="12_1_0" depart="25451.00" arrival="25484.00">
+        <route edges="4749006" exitTimes="25484.00"/>
+    </vehicle>
+
+    <vehicle id="12_1_1" depart="25477.00" arrival="25490.00">
+        <route edges="4910876" exitTimes="25490.00"/>
+    </vehicle>
+
+    <vehicle id="28_1_0" depart="25489.00" arrival="25513.00">
+        <route edges="-174388265#1" exitTimes="25513.00"/>
+    </vehicle>
+
+    <vehicle id="28_1_1" depart="25499.00" arrival="25524.00">
+        <route edges="-174393608#1" exitTimes="25524.00"/>
+    </vehicle>
+
+    <vehicle id="5_1_0" depart="25526.00" arrival="25533.00">
+        <route edges="6433848#2" exitTimes="25533.00"/>
+    </vehicle>
+
+    <vehicle id="12_1_2" depart="25517.00" arrival="25535.00">
+        <route edges="4759238" exitTimes="25535.00"/>
+    </vehicle>
+
+    <vehicle id="28_1_2" depart="25533.00" arrival="25538.00">
+        <route edges="58560464#0" exitTimes="25538.00"/>
+    </vehicle>
+
+    <vehicle id="14_1_0" depart="25522.00" arrival="25540.00">
+        <route edges="38008151 431431055 402084478 402084477 38008152" exitTimes="25526.00 25530.00 25535.00 25538.00 25540.00"/>
+    </vehicle>
+
+    <vehicle id="5_1_1" depart="25549.00" arrival="25560.00">
+        <route edges="158612540#1" exitTimes="25560.00"/>
+    </vehicle>
+
+    <vehicle id="12_1_3" depart="25557.00" arrival="25567.00">
+        <route edges="5130429" exitTimes="25567.00"/>
+    </vehicle>
+
+    <vehicle id="14_1_1" depart="25556.00" arrival="25582.00">
+        <route edges="97129768#1" exitTimes="25582.00"/>
+    </vehicle>
+
+    <vehicle id="14_1_3" depart="25579.00" arrival="25588.00">
+        <route edges="486260018" exitTimes="25588.00"/>
+    </vehicle>
+
+    <vehicle id="14_1_2" depart="25572.00" arrival="25601.00">
+        <route edges="124272636" exitTimes="25601.00"/>
+    </vehicle>
+
+    <vehicle id="28_1_3" depart="25609.00" arrival="25615.00">
+        <route edges="428303127" exitTimes="25615.00"/>
+    </vehicle>
+
+    <vehicle id="28_1_4" depart="25634.00" arrival="25640.00">
+        <route edges="38008155" exitTimes="25640.00"/>
+    </vehicle>
+
+    <vehicle id="28_1_5" depart="25640.00" arrival="25647.00">
+        <route edges="500021865" exitTimes="25647.00"/>
+    </vehicle>
+
+    <vehicle id="10_1_0" depart="25667.00" arrival="25679.00">
+        <route edges="4729558" exitTimes="25679.00"/>
+    </vehicle>
+
+    <vehicle id="10_1_1" depart="25717.00" arrival="25734.00">
+        <route edges="171121248" exitTimes="25734.00"/>
+    </vehicle>
+
+    <vehicle id="25_1_0" depart="25745.00" arrival="25749.00">
+        <route edges="58560464#0" exitTimes="25749.00"/>
+    </vehicle>
+
+    <vehicle id="10_1_2" depart="25751.00" arrival="25761.00">
+        <route edges="5130429" exitTimes="25761.00"/>
+    </vehicle>
+
+    <vehicle id="9_1_0" depart="25774.00" arrival="25775.00">
+        <route edges="672365867" exitTimes="25775.00"/>
+    </vehicle>
+
+    <vehicle id="25_1_1" depart="25846.00" arrival="25851.00">
+        <route edges="38008155" exitTimes="25851.00"/>
+    </vehicle>
+
+    <vehicle id="25_1_2" depart="25852.00" arrival="25859.00">
+        <route edges="500021865" exitTimes="25859.00"/>
+    </vehicle>
+
+    <vehicle id="3_2_0" depart="39609.00" arrival="39614.00">
+        <route edges="gneE507" exitTimes="39614.00"/>
+    </vehicle>
+
+    <vehicle id="5_2_0" depart="39608.00" arrival="39619.00">
+        <route edges="158612540#1" exitTimes="39619.00"/>
+    </vehicle>
+
+    <vehicle id="3_2_1" depart="39613.00" arrival="39624.00">
+        <route edges="5130429" exitTimes="39624.00"/>
+    </vehicle>
+
+    <vehicle id="5_2_1" depart="39631.00" arrival="39650.00">
+        <route edges="621342731" exitTimes="39650.00"/>
+    </vehicle>
+
+    <vehicle id="25_2_0" depart="39807.00" arrival="39824.00">
+        <route edges="171121248" exitTimes="39824.00"/>
+    </vehicle>
+
+    <vehicle id="23_2_0" depart="39819.00" arrival="39850.00">
+        <route edges="4749006" exitTimes="39850.00"/>
+    </vehicle>
+
+    <vehicle id="13_2_0" depart="39839.00" arrival="39852.00">
+        <route edges="4729558" exitTimes="39852.00"/>
+    </vehicle>
+
+    <vehicle id="25_2_1" depart="39841.00" arrival="39852.00">
+        <route edges="5130429" exitTimes="39852.00"/>
+    </vehicle>
+
+    <vehicle id="23_2_1" depart="39845.00" arrival="39859.00">
+        <route edges="4910876" exitTimes="39859.00"/>
+    </vehicle>
+
+    <vehicle id="25_2_2" depart="39848.00" arrival="39860.00">
+        <route edges="169734863#0" exitTimes="39860.00"/>
+    </vehicle>
+
+    <vehicle id="13_2_1" depart="39855.00" arrival="39889.00">
+        <route edges="4712862" exitTimes="39889.00"/>
+    </vehicle>
+
+    <vehicle id="23_2_2" depart="39890.00" arrival="39908.00">
+        <route edges="171121248" exitTimes="39908.00"/>
+    </vehicle>
+
+    <vehicle id="23_2_4" depart="39905.00" arrival="39914.00">
+        <route edges="486260018" exitTimes="39914.00"/>
+    </vehicle>
+
+    <vehicle id="23_2_3" depart="39898.00" arrival="39925.00">
+        <route edges="124272636" exitTimes="39925.00"/>
+    </vehicle>
+
+    <vehicle id="19_2_0" depart="39963.00" arrival="39964.00">
+        <route edges="672365867" exitTimes="39964.00"/>
+    </vehicle>
+
+    <vehicle id="20_2_0" depart="39960.00" arrival="39991.00">
+        <route edges="4749006" exitTimes="39991.00"/>
+    </vehicle>
+
+    <vehicle id="20_2_1" depart="39986.00" arrival="39999.00">
+        <route edges="4910876" exitTimes="39999.00"/>
+    </vehicle>
+
+    <vehicle id="28_2_0" depart="39991.00" arrival="40009.00">
+        <route edges="171121248" exitTimes="40009.00"/>
+    </vehicle>
+
+    <vehicle id="24_2_0" depart="39999.00" arrival="40011.00">
+        <route edges="4729558" exitTimes="40011.00"/>
+    </vehicle>
+
+    <vehicle id="24_2_1" depart="40008.00" arrival="40025.00">
+        <route edges="38008151 431431055 402084478 402084477 38008152" exitTimes="40012.00 40017.00 40021.00 40024.00 40025.00"/>
+    </vehicle>
+
+    <vehicle id="28_2_1" depart="40025.00" arrival="40035.00">
+        <route edges="5130429" exitTimes="40035.00"/>
+    </vehicle>
+
+    <vehicle id="28_2_2" depart="40032.00" arrival="40042.00">
+        <route edges="169734863#0" exitTimes="40042.00"/>
+    </vehicle>
+
+    <vehicle id="20_2_2" depart="40031.00" arrival="40049.00">
+        <route edges="171121248" exitTimes="40049.00"/>
+    </vehicle>
+
+    <vehicle id="20_2_4" depart="40046.00" arrival="40055.00">
+        <route edges="486260018" exitTimes="40055.00"/>
+    </vehicle>
+
+    <vehicle id="24_2_2" depart="40042.00" arrival="40067.00">
+        <route edges="97129768#1" exitTimes="40067.00"/>
+    </vehicle>
+
+    <vehicle id="20_2_3" depart="40039.00" arrival="40069.00">
+        <route edges="124272636" exitTimes="40069.00"/>
+    </vehicle>
+
+    <vehicle id="24_2_3" depart="40051.00" arrival="40070.00">
+        <route edges="171121248" exitTimes="40070.00"/>
+    </vehicle>
+
+    <vehicle id="24_2_4" depart="40078.00" arrival="40080.00">
+        <route edges="62412697#2" exitTimes="40080.00"/>
+    </vehicle>
+
+    <vehicle id="24_2_5" depart="40089.00" arrival="40094.00">
+        <route edges="620595955#0" exitTimes="40094.00"/>
+    </vehicle>
+
+    <vehicle id="28_2_3" depart="40093.00" arrival="40103.00">
+        <route edges="-428341305" exitTimes="40103.00"/>
+    </vehicle>
+
+    <vehicle id="20_2_6" depart="40111.00" arrival="40116.00">
+        <route edges="6384350#2" exitTimes="40116.00"/>
+    </vehicle>
+
+    <vehicle id="10_2_0" depart="40126.00" arrival="40132.00">
+        <route edges="124272619" exitTimes="40132.00"/>
+    </vehicle>
+
+    <vehicle id="24_2_6" depart="40128.00" arrival="40140.00">
+        <route edges="617436202#0" exitTimes="40140.00"/>
+    </vehicle>
+
+    <vehicle id="20_2_7" depart="40135.00" arrival="40151.00">
+        <route edges="8071578#3" exitTimes="40151.00"/>
+    </vehicle>
+
+    <vehicle id="20_2_5" depart="40083.00" arrival="40215.00">
+        <route edges="6430733#0 -460421473#1 -460423542#2 -460423542#0 -6366765#11 -6366765#9 -6366765#8 6463008#0" exitTimes="40088.00 40144.00 40148.00 40194.00 40197.00 40203.00 40207.00 40215.00"/>
+    </vehicle>
+
+    <vehicle id="4_2_0" depart="40226.00" arrival="40227.00">
+        <route edges="672365867" exitTimes="40227.00"/>
+    </vehicle>
+
+    <vehicle id="12_2_2" depart="40225.00" arrival="40234.00">
+        <route edges="8111068#1" exitTimes="40234.00"/>
+    </vehicle>
+
+    <vehicle id="14_2_0" depart="40234.00" arrival="40240.00">
+        <route edges="38008155" exitTimes="40240.00"/>
+    </vehicle>
+
+    <vehicle id="14_2_1" depart="40240.00" arrival="40246.00">
+        <route edges="500021865" exitTimes="40246.00"/>
+    </vehicle>
+
+    <vehicle id="12_2_3" depart="40248.00" arrival="40254.00">
+        <route edges="428303127" exitTimes="40254.00"/>
+    </vehicle>
+
+    <vehicle id="12_2_4" depart="40273.00" arrival="40299.00">
+        <route edges="38008155 4749003" exitTimes="40282.00 40299.00"/>
+    </vehicle>
+
+    <vehicle id="12_2_1" depart="40205.00" arrival="40391.00">
+        <route edges="96260967 106927268 428230605#0 22927970#0 22927970#1 333212250#1 428243943#5 620762217#0 679639327#0 8111068#0 8111068#1 428231558#1 425811432 35824613" exitTimes="40213.00 40233.00 40240.00 40240.00 40251.00 40259.00 40268.00 40324.00 40331.00 40331.00 40369.00 40375.00 40377.00 40391.00"/>
+    </vehicle>
+
+    <vehicle id="12_2_0" depart="40163.00" arrival="40484.00">
+        <route edges="6508650#4 6508650#5 6346308#0 6346308#1 6366765#1 6366765#2 6366765#3 6366765#5 6366765#6 6366765#8 6366765#9 6366765#11 -436163947#2 -339831624 621898656#0 -6433848#3 -6433848#1 593523759#0 6443378#0 4755249 58560464#0" exitTimes="40178.00 40190.00 40195.00 40201.00 40215.00 40228.00 40239.00 40248.00 40254.00 40259.00 40262.00 40282.00 40323.00 40387.00 40443.00 40447.00 40458.00 40462.00 40469.00 40481.00 40484.00"/>
+    </vehicle>
+
+</routes>

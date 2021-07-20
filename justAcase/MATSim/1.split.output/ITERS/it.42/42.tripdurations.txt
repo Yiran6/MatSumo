@@ -1,5 +1,5 @@
 pattern	0+	5+	10+	15+	20+	25+	30+	35+	40+	45+	50+	55+	60+
-home---work	20	21	12	8	0	0	0	0	0	0	0	0	0
-work---home	20	21	12	8	0	0	0	0	0	0	0	0	0
+home---work	98	30	9	1	0	0	0	0	0	0	0	0	0
+work---home	95	32	10	1	0	0	0	0	0	0	0	0	0
 
-average trip duration: 465.6885245901639 seconds = 00:07:45
+average trip duration: 208.57971014492753 seconds = 00:03:28
