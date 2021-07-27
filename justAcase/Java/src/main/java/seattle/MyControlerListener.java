@@ -217,16 +217,16 @@ public class MyControlerListener implements IterationStartsListener, IterationEn
 			String	outputRoutes			=	this.outFolder + "routes.txt";
 			String	outputTravelTimes		=	this.outFolder + "travelTimes.txt";
 			String	outputLinkEnterIds		=	this.outFolder + "linkEnterIds.txt";
-			String	outputLinkExitIds		=	this.outFolder + "linkExitIds.txt";
+//			String	outputLinkExitIds		=	this.outFolder + "linkExitIds.txt";
 			String	outputLinkEnterTimes	=	this.outFolder + "linkEnterTimes.txt";
-			String	outputLinkExitTimes		=	this.outFolder + "linkExitTimes.txt";
+//			String	outputLinkExitTimes		=	this.outFolder + "linkExitTimes.txt";
 			
 			try {
 				writeTravelTtime(this.myEventHandler.travelTimesReport(), outputTravelTimes);
 				writeTimes(this.myEventHandler.linkEnterTimesReport(), outputLinkEnterTimes);
-				writeTimes(this.myEventHandler.linkExitTimesReport(), outputLinkExitTimes);
+//				writeTimes(this.myEventHandler.linkExitTimesReport(), outputLinkExitTimes);
 				writeIds(this.myEventHandler.linkEnterIdsReport(), outputLinkEnterIds);
-				writeIds(this.myEventHandler.linkExitIdsReport(), outputLinkExitIds);
+//				writeIds(this.myEventHandler.linkExitIdsReport(), outputLinkExitIds);
 				writeIds(this.myEventHandler.travelRoutesReport(), outputRoutes);
 				
 			} catch (IOException e) {

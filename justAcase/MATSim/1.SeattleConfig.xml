@@ -5,16 +5,18 @@
 
 	<module name="global">
 		<param name="randomSeed" value="4711" />
-		<param name="coordinateSystem" value="WGS84" />
+		<param name="coordinateSystem" value="EPSG:32610" />
 		<param name="numberOfThreads" value="1" />
 	</module>
 
 	<module name="network">
-		<param name="inputNetworkFile" value="streets_sdot_fixed_ToMATSim.xml" />
+		<!-- <param name="inputCRS" value="EPSG:4326"/> Not yet supported -->
+		<param name="inputNetworkFile" value="Great_Seattle_addOn_ToOSM_ToMATSim.xml" />
 	</module>
 
 	<module name="plans">
-		<param name="inputPlansFile" value="streets_sdot_fixed_ToMATSim_randomPlan.xml" />
+		<!-- <param name="inputCRS" value="EPSG:4326"/> Not yet supported -->
+		<param name="inputPlansFile" value="Great_Seattle_addOn_ToOSM_ToMATSim_randomPlan.xml" />
 	</module>
 
 	<module name="controler">
@@ -60,7 +62,7 @@
 	</module>
 
 	<module name="strategy">
-		<param name="maxAgentPlanMemorySize" value="5" /> <!-- 0 means unlimited -->
+		<param name="maxAgentPlanMemorySize" value="0" /> <!-- 0 means unlimited -->
 
 		<param name="ModuleProbability_1" value="0.9" />
 		<param name="Module_1" value="BestScore" />

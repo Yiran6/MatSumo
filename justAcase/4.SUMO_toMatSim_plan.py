@@ -33,7 +33,7 @@ def getSec(time_str):
     h, m, s = time_str.split(':')
     return int(h) * 3600 + int(m) * 60 + int(s)
 
-def main(routesFolder, outfile, sumolinksFile, linkExitIdsFile, linkExitTimesFile, tripInfoFile, sumoNetwork):
+def main(routesFolder, outfile, sumolinksFile, linkEnterIdsFile, linkEnterTimesFile, tripInfoFile, sumoNetwork):
 
     # read route file
     routesFile = open(routesFolder + "routes.txt", "r")
@@ -53,19 +53,19 @@ def main(routesFolder, outfile, sumolinksFile, linkExitIdsFile, linkExitTimesFil
         sumolinks_SuMat[_isumolink[0]] = _isumolink[1]
 
     # read linkEnter/ExitIds and linkEnter/ExitTimes
-    linkExitIds = open(linkExitIdsFile, "r")
-    _linkExitIds = linkExitIds.read().splitlines()
-    linkExitIds = {}
-    for ilink in _linkExitIds:
+    linkEnterIds = open(linkEnterIdsFile, "r")
+    _linkEnterIds = linkEnterIds.read().splitlines()
+    linkEnterIds = {}
+    for ilink in _linkEnterIds:
         _data = ilink.split(":\t")
-        linkExitIds[_data[0]] = _data[1].split("\t")
+        linkEnterIds[_data[0]] = _data[1].split("\t")
 
-    linkExitTimes = open(linkExitTimesFile, "r")
-    _linkExitTimes = linkExitTimes.read().splitlines()
-    linkExitTimes = {}
-    for ilink in _linkExitTimes:
+    linkEnterTimes = open(linkEnterTimesFile, "r")
+    _linkEnterTimes = linkEnterTimes.read().splitlines()
+    linkEnterTimes = {}
+    for ilink in _linkEnterTimes:
         _data = ilink.split(":\t")
-        linkExitTimes[_data[0]] = _data[1].split("\t")
+        linkEnterTimes[_data[0]] = _data[1].split("\t")
 
     tripType = ['"' + "home" + '"', '"' + "work" + '"']
     tripMode = ['"' + "car" + '"']
@@ -166,9 +166,9 @@ def main(routesFolder, outfile, sumolinksFile, linkExitIdsFile, linkExitTimesFil
                     idveh_split = "%s_%s" % (person, str(jx))
 
                     if (jx==0 and startLinkId==0): # get the departure time from MATSim
-                        for kx in range(len(linkExitIds[person])):
-                            if linkExitIds[person][kx]==startLink:
-                                depart = linkExitTimes[person][kx]
+                        for kx in range(len(linkEnterIds[person])):
+                            if linkEnterIds[person][kx]==startLink:
+                                depart = linkEnterTimes[person][kx]
                                 break
                                 # print("depart time", depart)
 
@@ -248,12 +248,12 @@ if __name__ == "__main__":
     matsimFolder = "MATSim/"
     sumoFolder = "SUMO/"
     routFolder = matsimFolder + "1.output_extra/"
-    outfile = matsimFolder + "sumo_ToMATSim_plans.xml"
-    tripInfoFile = sumoFolder + "tripinfo_Seattle_all.xml"
-    linkExitIdsFile = routFolder + "linkExitIds.txt"
-    linkExitTimesFile = routFolder + "linkExitTimes.txt"
+    outfile = matsimFolder + "1.sumo_ToMATSim_plans.xml"
+    tripInfoFile = sumoFolder + "1.tripinfo_Seattle_all.xml"
+    linkEnterIdsFile = routFolder + "linkEnterIds.txt"
+    linkEnterTimesFile = routFolder + "linkEnterTimes.txt"
     sumolinks = matsimFolder + "SUMOLinks.txt"
     sumoNetwork = sumoFolder + "/0.fmYiran/Network_check_Ped/Seattle02262021_veh_ped.net.xml"
     carsOnly = True
-    main(routFolder, outfile, sumolinks, linkExitIdsFile, linkExitTimesFile, tripInfoFile, sumoNetwork)
+    main(routFolder, outfile, sumolinks, linkEnterIdsFile, linkEnterTimesFile, tripInfoFile, sumoNetwork)
 

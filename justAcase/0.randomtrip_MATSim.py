@@ -7,7 +7,7 @@ import time
 
 folder = "MATSim/"
 outputFolder = "MATSim/"
-tree = ET.parse(folder + "/" + "streets_sdot_fixed_ToMATSim.xml")
+tree = ET.parse(folder + "/" + "Great_Seattle_addOn_ToOSM_ToMATSim.xml")
 root = tree.getroot()
 
 allLinks = []
@@ -31,7 +31,7 @@ timeStr = 25200
 timeEnd = 61200
 cnt = 0
 
-outfile = open("MATSim\streets_sdot_fixed_ToMATSim_randomPlan.xml", 'w')
+outfile = open("MATSim\Great_Seattle_addOn_ToOSM_ToMATSim_randomPlan.xml", 'w')
 # header
 outfile.write('<?xml version="1.0" encoding="UTF-8"?>')
 outfile.write('<!DOCTYPE plans SYSTEM "http://www.matsim.org/files/dtd/plans_v4.dtd">\n')

@@ -107,7 +107,7 @@
 	</module>
 <!-- ====================================================================== -->
 	<module name="global" >
-		<param name="coordinateSystem" value="WGS84" />
+		<param name="coordinateSystem" value="EPSG:32610" />
 		<param name="insistingOnDeprecatedConfigVersion" value="true" />
 		<!-- "global" number of threads.  This number is used, e.g., for replanning, but NOT in the mobsim.  This can typically be set to as many cores as you have available, or possibly even slightly more. -->
 		<param name="numberOfThreads" value="1" />
@@ -130,7 +130,7 @@
 		<!-- The Coordinates Reference System in which the coordinates are expressed in the input file. At import, the coordinates will be converted to the coordinate system defined in "global", and willbe converted back at export. If not specified, no conversion happens. -->
 		<param name="inputCRS" value="null" />
 		<param name="inputChangeEventsFile" value="null" />
-		<param name="inputNetworkFile" value="streets_sdot_fixed_ToMATSim.xml" />
+		<param name="inputNetworkFile" value="Great_Seattle_addOn_ToOSM_ToMATSim.xml" />
 		<param name="laneDefinitionsFile" value="null" />
 		<param name="timeVariantNetwork" value="false" />
 	</module>
@@ -355,7 +355,7 @@
 		<param name="inputCRS" value="null" />
 		<!-- Path to a file containing person attributes (required file format: ObjectAttributes). -->
 		<param name="inputPersonAttributesFile" value="null" />
-		<param name="inputPlansFile" value="streets_sdot_fixed_ToMATSim_randomPlan.xml" />
+		<param name="inputPlansFile" value="Great_Seattle_addOn_ToOSM_ToMATSim_randomPlan.xml" />
 		<!-- Defines how routes are stored in memory. Currently supported: LinkNetworkRoute, CompressedNetworkRoute. -->
 		<param name="networkRouteType" value="LinkNetworkRoute" />
 		<!-- (not tested) will remove plan attributes that are presumably not used, such as activityStartTime. default=false -->
@@ -510,7 +510,7 @@
 		<!-- fraction of iterations where innovative strategies are switched off.  Something link 0.8 should be good.  E.g. if you run from iteration 400 to iteration 500, innovation is switched off at iteration 480 -->
 		<param name="fractionOfIterationsToDisableInnovation" value="Infinity" />
 		<!-- maximum number of plans per agent.  ``0'' means ``infinity''.  Currently (2010), ``5'' is a good number -->
-		<param name="maxAgentPlanMemorySize" value="5" />
+		<param name="maxAgentPlanMemorySize" value="0" />
 		<!-- strategyName of PlanSelector for plans removal.  Possible defaults: WorstPlanSelector SelectRandom SelectExpBetaForRemoval ChangeExpBetaForRemoval PathSizeLogitSelectorForRemoval . The current default, WorstPlanSelector is not a good choice from a discrete choice theoretical perspective. Alternatives, however, have not been systematically tested. kai, feb'12 -->
 		<param name="planSelectorForRemoval" value="WorstPlanSelector" />
 		<parameterset type="strategysettings" >

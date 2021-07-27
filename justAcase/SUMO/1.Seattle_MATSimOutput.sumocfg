@@ -1,0 +1,23 @@
+<configuration>
+
+	<input>
+		<net-file value="Seattle02262021_veh_ped.net.xml"/>
+		<route-files value="1.matsim_ToSUMO.rou.xml"/>
+	</input>
+
+	<time>
+		<begin value="25000"/>
+		<end value="50000"/>
+	</time>
+
+	<output>
+		<tripinfo-output value = "1.tripinfo_Seattle_all.xml" />
+		<vehroute-output value = "1.vehicleRoute_Seattle_all.xml" />
+		<vehroute-output.exit-times value = "true" />
+	</output>
+
+	<guionly>
+		<quit-on-end value = "false" />
+	</guionly>
+
+</configuration>

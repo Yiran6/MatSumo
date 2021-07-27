@@ -10,11 +10,11 @@
 	</module>
 
 	<module name="network">
-		<param name="inputNetworkFile" value="streets_sdot_fixed_ToMATSim.xml" />
+		<param name="inputNetworkFile" value="Great_Seattle_addOn_ToOSM_ToMATSim.xml" />
 	</module>
 
 	<module name="plans">
-		<param name="inputPlansFile" value="sumo_ToMATSim_plans.xml" />
+		<param name="inputPlansFile" value="1.sumo_ToMATSim_plans.xml" />
 	</module>
 
 	<module name="controler">

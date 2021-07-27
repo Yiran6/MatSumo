@@ -119,7 +119,7 @@ public class MyEventHandler implements PersonDepartureEventHandler, PersonArriva
 		times.add(travelTime);
 		this.travelTimes.put(personID, times);
 		
-		// enter and exit times are the same when departure
+		// output exit times when arrival
 		ArrayList<Id<Link>> linkExitId = new ArrayList<Id<Link>>();
 		ArrayList<Double> linkExitTime = new ArrayList<Double>();
 		linkExitTime.add(event.getTime());

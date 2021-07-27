@@ -32,7 +32,7 @@ def getSec(time_str):
     h, m, s = time_str.split(':')
     return int(h) * 3600 + int(m) * 60 + int(s)
 
-def main(routesFolder, outfile, sumolinksFile, linkEnterIdsFile, linkEnterTimesFile, linkExitIdsFile, linkExitTimesFile):
+def main(routesFolder, outfile, sumolinksFile, linkEnterIdsFile, linkEnterTimesFile):
 
     # read route file
     routesFile = open(routesFolder + "routes.txt", "r")
@@ -51,7 +51,7 @@ def main(routesFolder, outfile, sumolinksFile, linkEnterIdsFile, linkEnterTimesF
         _isumolink = sumolinks[ix].split("\t")
         sumolinks_matSu[_isumolink[1]] = _isumolink[0]
 
-    # read linkEnter/ExitIds and linkEnter/ExitTimes
+    # read linkEnter and linkEnter
     linkEnterIds = open(linkEnterIdsFile, "r")
     _linkEnterIds = linkEnterIds.read().splitlines()
     linkEnterIds = {}
@@ -65,9 +65,6 @@ def main(routesFolder, outfile, sumolinksFile, linkEnterIdsFile, linkEnterTimesF
     for ilink in _linkEnterTimes:
         _data = ilink.split(":\t")
         linkEnterTimes[_data[0]] = _data[1].split("\t")
-
-    # linkExitIds = open(linkExitIdsFile, "r")
-    # linkExitTimes = open(linkExitTimesFile, "r")
 
     # check each route to see if the person entered SUMO links
     with open(outfile, 'w') as outf:
@@ -147,10 +144,8 @@ def main(routesFolder, outfile, sumolinksFile, linkEnterIdsFile, linkEnterTimesF
 if __name__ == "__main__":
     matsimFolder = "MATSim/"
     routFolder = matsimFolder + "1.output_extra/"
-    outfile = "SUMO/matsim_ToSUMO.rou.xml"
+    outfile = "SUMO/1.matsim_ToSUMO.rou.xml"
     sumolinksFile = matsimFolder + "SUMOLinks.txt"
     linkEnterIdsFile = routFolder + "linkEnterIds.txt"
     linkEnterTimesFile = routFolder + "linkEnterTimes.txt"
-    linkExitIdsFile = routFolder + "linkExitIds.txt"
-    linkExitTimesFile = routFolder + "linkExitTimes.txt"
-    main(routFolder, outfile, sumolinksFile, linkEnterIdsFile, linkEnterTimesFile, linkExitIdsFile, linkExitTimesFile)
+    main(routFolder, outfile, sumolinksFile, linkEnterIdsFile, linkEnterTimesFile)
