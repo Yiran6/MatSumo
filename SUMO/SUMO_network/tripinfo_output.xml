@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 08/31/22 22:19:35 by Eclipse SUMO GUI Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\Seattle_road_network.net.xml"/>
+        <route-files value="C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\veh_od_input.rou.xml,C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\bus_link_route.rou.xml,C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\ped_od_input.rou.xml"/>
+        <additional-files value="C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\Taz_with_pseudo_link.add.xml,C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\edge_data.add.xml,C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\signal_additional.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\tripinfo_output.xml"/>
+        <vehroute-output value="C:\Users\guoqq17\Desktop\C2Smart\sumo_proj\SUMO_network\vehroute_output.xml"/>
+    </output>
+
+    <time>
+        <begin value="18000"/>
+        <end value="36000"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <extrapolate-departpos value="true"/>
+        <threads value="4"/>
+        <ignore-junction-blocker value="60"/>
+        <ignore-route-errors value="true"/>
+        <ignore-accidents value="true"/>
+        <collision.action value="remove"/>
+        <time-to-teleport value="150"/>
+        <sloppy-insert value="true"/>
+        <lanechange.overtake-right value="true"/>
+    </processing>
+
+    <routing>
+        <routing-algorithm value="astar"/>
+        <weights.priority-factor value="0.5"/>
+        <device.rerouting.probability value="0.7"/>
+        <device.rerouting.with-taz value="true"/>
+        <device.rerouting.threads value="4"/>
+    </routing>
+
+    <gui_only>
+        <tracker-interval value="0.1"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+</tripinfos>
