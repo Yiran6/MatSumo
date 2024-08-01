@@ -1,1 +1,0 @@
-All fields for NPMRDS from INRIX (Trucks and passenger vehicles) data for 141 TMC segments for Mondays, Tuesdays, Wednesdays, Thursdays, and Fridays from May 07, 2018 through May 18, 2018, averaged by the hour
